@@ -9,6 +9,14 @@ submitBtn.addEventListener("click",(evt)=>{
     if(validateName() && validateEmail() && validatePassword() && confirmPassword()){
         
        alert("Form Submitted Successfully");
+        // Clear input fields
+        document.querySelector("#name").value = "";
+        document.querySelector("#email").value = "";
+        document.querySelector("#password").value = "";
+        document.querySelector("#confirm").value = "";
+        document.querySelectorAll("i").forEach(icon => {
+            icon.classList.remove("fa-check", "fa-xmark");
+        });
         
     }
 })
