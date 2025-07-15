@@ -22,12 +22,7 @@
     padding: 20px 40px;
 
 }
-@media (max-width: 500px) {
-  .box {
-    width: 90%;
-    padding: 20px;
-  }
-}
+
 .signup-header h1{
     text-align: center;
     font-size: 2.2rem;
